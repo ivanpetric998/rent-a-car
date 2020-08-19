@@ -1,0 +1,28 @@
+<app-slider></app-slider>
+
+<app-advance-search></app-advance-search>
+
+<!-- Latest property -->
+<section id="aa-latest-property">
+    <div class="container">
+        <div class="aa-latest-property-area">
+            <div class="aa-title">
+                <h2>Najtraženija vozila</h2>
+                <span></span>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sit ea nobis quae vero voluptatibus.</p> -->
+            </div>
+            <div class="aa-latest-properties-content">
+                <div class="row">
+
+                    <div class="col-md-4" *ngFor="let automobil of najTrazenijaVozila">
+                        <app-one-car [automobilData]="automobil"></app-one-car>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Latest property -->
+
+<app-servisi></app-servisi>

@@ -1,0 +1,61 @@
+<app-background-header></app-background-header>
+
+<section id="aa-properties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+                <div class="auto">
+                    <h2>{{ auto.naziv | uppercase }}</h2>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <img src="assets/img/Automobili/{{ auto.velikaSlika }}" alt="{{ auto.naziv }}">
+                        </div>
+                    </div>
+
+                    <h3>{{ auto.grupa.naziv | uppercase}}</h3>
+                    <p>Cena : {{ auto.cena }}.00 Din. / dan</p>
+
+                    <h3>Osnovne karakteristike</h3>
+                    <div class="row karakteristike">
+                        <div class="col-md-4">
+                            <span>Broj sedista : {{ auto.brojSedista }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Broj vrata : {{ auto.brojVrata }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Broj kofera : {{ auto.brojKofera }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Gorivo : {{ auto.gorivo.naziv }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Menjac : {{ auto.menjac.naziv }}</span>
+                        </div>
+                    </div>
+
+                    <h3>Ostale karakteristike</h3>
+                    <div class="row karakteristike">
+
+                        <div class="col-md-4" *ngFor="let i of auto.karakteristike">
+                            <span>{{ i }}</span>
+                        </div>
+
+                    </div>
+
+                    <h3>Opis</h3>
+                    <div class="row karakteristike">
+                        <p>{{ auto.opis }}</p>
+                    </div>
+
+                    <button (click)="rezervacija()" type="button" class="rezervisi">Rezervisi</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+</section>

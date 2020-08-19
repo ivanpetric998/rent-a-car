@@ -1,0 +1,17 @@
+[{
+        "ruta": "/",
+        "naziv": "Početna"
+    },
+    {
+        "ruta": "/cars",
+        "naziv": "Vozni park"
+    },
+    {
+        "ruta": "/o-nama",
+        "naziv": "O nama"
+    },
+    {
+        "ruta": "/kontakt",
+        "naziv": "Kontakt"
+    }
+]

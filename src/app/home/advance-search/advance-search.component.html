@@ -1,0 +1,53 @@
+<!-- Advance Search -->
+<section id="aa-advance-search">
+    <div class="container">
+        <div class="aa-advance-search-area">
+            <div class="form">
+                <div class="aa-advance-search-top">
+                    <div class="row">
+                        <form [formGroup]="advanceSearchForm" (ngSubmit)="onSubmit()">
+                            <div class="col-md-3">
+                                <div class="aa-single-advance-search">
+                                    <label class="col-2 col-form-label">Datum preuzimanja</label>
+                                    <input [ngClass]="{'crveni-okvir': !advanceSearchForm.get('datumOd').valid}" formControlName="datumOd" class="form-control" type="date">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="aa-single-advance-search">
+                                    <label class="col-2 col-form-label">Vreme preuzimanja</label>
+                                    <input [ngClass]="{'crveni-okvir': !advanceSearchForm.get('vremeOd').valid}" formControlName="vremeOd" class="form-control" type="time">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="aa-single-advance-search">
+                                    <label class="col-2 col-form-label">Datum vracanja</label>
+                                    <input [ngClass]="{'crveni-okvir': !advanceSearchForm.get('datumDo').valid || (advanceSearchForm.errors?.datumDoNijeUDobromFormatu && advanceSearchForm.touched) }" formControlName="datumDo" class="form-control" type="date">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="aa-single-advance-search">
+                                    <label class="col-2 col-form-label">Vreme vracanja</label>
+                                    <input [ngClass]="{'crveni-okvir': !advanceSearchForm.get('vremeDo').valid}" formControlName="vremeDo" class="form-control" type="time">
+                                </div>
+                            </div>
+
+                            <div class="aa-advance-search-bottom">
+                                <div class="row">
+                                    <div class="col-md-1">
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="aa-single-advance-search">
+                                            <input class="aa-search-btn" type="submit" value="Trazi automobile">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Advance Search -->

@@ -1,0 +1,43 @@
+<app-background-header></app-background-header>
+
+<section id="aa-properties">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <div class="aa-properties-content">
+
+                    <app-sort-cars (sortEvent)="onSortEvent($event)"></app-sort-cars>
+
+                    <div class=" aa-properties-content-body ">
+
+                        <ul class="aa-properties-nav ">
+
+                            <li *ngFor="let automobil of automobili">
+
+                                <app-one-car [automobilData]="automobil"></app-one-car>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4 ">
+
+                <app-filter-cars (filterEvent)="onFilterEvent($event) "></app-filter-cars>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

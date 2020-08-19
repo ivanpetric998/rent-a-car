@@ -1,0 +1,36 @@
+.podaci-o-rezervaciji p {
+    padding-left: 15px;
+    font-size: 18px;
+    color: red;
+}
+
+.podaci-o-rezervaciji h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.rezervisi {
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    outline: medium none;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #59abe3;
+}
+
+.table {
+    margin-top: 15px;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.table tr {
+    border-bottom: 1px solid #ccc;
+}

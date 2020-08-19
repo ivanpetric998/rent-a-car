@@ -1,0 +1,19 @@
+<app-background-header></app-background-header>
+
+<!-- Latest property -->
+<section id="aa-latest-property">
+    <div class="container">
+        <div class="aa-latest-property-area">
+
+            <div class="aa-latest-properties-content">
+                <div class="row">
+                    <div class="col-md-4" *ngFor="let automobil of automobili">
+                        <app-one-car [automobilData]="automobil"></app-one-car>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Latest property -->

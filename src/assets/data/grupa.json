@@ -1,0 +1,26 @@
+[{
+        "id": 1,
+        "naziv": "Hečbek",
+        "boja": "#ff0000"
+    },
+    {
+        "id": 2,
+        "naziv": "Limuzina",
+        "boja": "#59abe3"
+    },
+    {
+        "id": 3,
+        "naziv": "Karavan",
+        "boja": "#00ad3d"
+    },
+    {
+        "id": 4,
+        "naziv": "Minivan",
+        "boja": "#ad0096"
+    },
+    {
+        "id": 5,
+        "naziv": "Džip",
+        "boja": "#030002"
+    }
+]

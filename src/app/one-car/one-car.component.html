@@ -1,0 +1,25 @@
+<article class="aa-properties-item">
+    <a class="aa-properties-item-img">
+        <img alt="{{ automobilData.naziv }}" src="assets/img/Automobili/{{ automobilData.malaSlika }}">
+    </a>
+    <div class="aa-tag" [ngStyle]="{backgroundColor: automobilData.grupa.boja}">
+        {{ automobilData.grupa.naziv }}
+    </div>
+    <div class="aa-properties-item-content">
+        <div class="aa-properties-info">
+            <span>Broj vrata : {{ automobilData.brojVrata }}</span>
+            <span>Menjač : {{ automobilData.menjac.naziv }}</span>
+            <span>Gorivo : {{ automobilData.gorivo.naziv }}</span>
+        </div>
+        <div class="aa-properties-about">
+            <h3><a>{{ automobilData.naziv }}</a></h3>
+            <p>{{ automobilData.opis | shorten: 90 }}</p>
+        </div>
+        <div class="aa-properties-detial">
+            <span class="aa-price">
+                    {{ automobilData.cena }}.00 Din. / dan
+                </span>
+            <a class="aa-secondary-btn" [routerLink]="['/cars',automobilData.id]">Detaljnije</a>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,404 @@
+[{
+        "id": 1,
+        "naziv": "Toyota Auris",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 1,
+            "naziv": "Hečbek",
+            "boja": "#ff0000"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "ESP", "Automatska klima", "Radio", "Tempomat", "Multifunkc. volan", "Hands free", "Kamera"
+        ],
+        "opis": "Toyota Auris je vrlo udobna, odlično izgleda, ima sportsko telo i neverovatne performanse. Ukoliko želite da rentirati automobil u čijoj vožnji ćete uživati, ovo je pravi izbor za vas.",
+        "cena": 4500,
+        "malaSlika": "auris-mala.jpg",
+        "velikaSlika": "auris-velika.jpg"
+    },
+    {
+        "id": 2,
+        "naziv": "BMW 5",
+        "menjac": {
+
+            "id": 2,
+            "naziv": "Automatski"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 2,
+            "naziv": "Limuzina",
+            "boja": "#59abe3"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Automatska klima", "Radio", "Tempomat", "Multifunkc. volan", "Hands free", "Kamera",
+            "Parking senzori", "Navigacija", "Start-stop sistem", "ISOFIX sistem", "Glasovne komande", "Ekran na dodir"
+        ],
+        "opis": "BMW 5 je vrhunska limuzina visokog stepena udobnosti i nešto najbolje što nudi BMW. BMW 5 je idealan izbor za sve one koji žele da se voze u limuzini vrhunskog kvaliteta.",
+        "cena": 10500,
+        "malaSlika": "bmw5-mala.jpg",
+        "velikaSlika": "bmw5-velika.jpg"
+    },
+    {
+        "id": 3,
+        "naziv": "Reno Escape",
+        "menjac": {
+
+            "id": 2,
+            "naziv": "Automatski"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 4,
+            "naziv": "Minivan",
+            "boja": "#ad0096"
+        },
+        "brojSedista": 7,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Automatska klima", "Radio", "Tempomat", "Multifunkc. volan", "Hands free",
+            "Parking senzori", "Navigacija"
+        ],
+        "opis": "Reno Escape je najudobniji auto koji Reno može da ponudi. Fantastičan je kada je reč o dugim putovanjima i putovanjima sa poroicom.",
+        "cena": 6000,
+        "malaSlika": "escape-mala.jpg",
+        "velikaSlika": "escape-velika.jpg"
+    },
+    {
+        "id": 4,
+        "naziv": "Reno Kadjar",
+        "menjac": {
+
+            "id": 2,
+            "naziv": "Automatski"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 5,
+            "naziv": "Džip",
+            "boja": "#030002"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Automatska klima", "Radio", "Multifunkc. volan", "Hands free", "Navigacija"
+        ],
+        "opis": "Reno Kadjar je džip vrhunskog kvaliteta i udobnosti. Sjajan kada je reč o dugim putovanjima, a i sjajna je sportska varijanta.",
+        "cena": 8500,
+        "malaSlika": "kadjar-mala.jpg",
+        "velikaSlika": "kadjar-velika.jpg"
+    },
+    {
+        "id": 5,
+        "naziv": "Reno Klio",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 1,
+            "naziv": "Benzin"
+        },
+        "grupa": {
+            "id": 1,
+            "naziv": "Hečbek",
+            "boja": "#ff0000"
+        },
+        "brojSedista": 5,
+        "brojVrata": 3,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "Manuelna klima", "Radio", "Multifunkc. volan", "Navigacija", "ISOFIX sistem",
+            "Start-stop sistem", "Ekran na dodir"
+        ],
+        "opis": "Mali, okretan i uvek nađe mesto za parking. Ovo su reči kojima se može opisati Reno modela Klio. Ima karakteristike koje Vam mogu izazvati samo zadovoljstvo.",
+        "cena": 3000,
+        "malaSlika": "klio-mala.jpg",
+        "velikaSlika": "klio-velika.jpg"
+    },
+    {
+        "id": 6,
+        "naziv": "Toyota Korola",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 1,
+            "naziv": "Benzin"
+        },
+        "grupa": {
+            "id": 2,
+            "naziv": "Limuzina",
+            "boja": "#59abe3"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "ASR", "ESP",
+            "Manuelna klima", "Radio", "Multifunkc. volan", "Navigacija", "ISOFIX sistem",
+            "Glasovne komande", "Ekran na dodir", "Hands free"
+        ],
+        "opis": "Limuzina vrhunskog kvaliteta, uostalom kao i svaki japanac. Sjajan kada je reč o dugim putovanjima, a osećaj kada je vozite je neverovatan.",
+        "cena": 6500,
+        "malaSlika": "korola-mala.jpg",
+        "velikaSlika": "korola-velika.jpg"
+    },
+    {
+        "id": 7,
+        "naziv": "Skoda Oktavia",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 2,
+            "naziv": "Limuzina",
+            "boja": "#59abe3"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ASR", "ESP", "Manuelna klima", "Radio", "Navigacija", "ISOFIX sistem", "Start-stop sistem", "Hands free"
+        ],
+        "opis": "Limuzina sa najboljim odnosom cene i kvaliteta, kao i svaka Škoda. Sjajan automobil za dugačka putovanja.",
+        "cena": 7000,
+        "malaSlika": "oktavia-mala.jpg",
+        "velikaSlika": "oktavia-velika.jpg"
+    },
+    {
+        "id": 8,
+        "naziv": "Volksvagen Pasat",
+        "menjac": {
+
+            "id": 2,
+            "naziv": "Automatski"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 2,
+            "naziv": "Limuzina",
+            "boja": "#59abe3"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ASR", "ESP", "Automatska klima", "Radio", "Navigacija", "ISOFIX sistem", "Start-stop sistem", "Hands free",
+            "Tempomat", "Ekran na dodir", "Multifunkc. volan"
+        ],
+        "opis": "Volksvagen Pasat je vrhunska limuzina visokog stepena udobnosti i nešto najbolje što nudi Volksvagen. Volksvagen Pasat je idealan izbor za sve one koji žele da se voze u limuzini vrhunskog kvaliteta.",
+        "cena": 11000,
+        "malaSlika": "pasat-mala.jpg",
+        "velikaSlika": "pasat-velika.jpg"
+    },
+    {
+        "id": 9,
+        "naziv": "Pežo 207",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 1,
+            "naziv": "Benzin"
+        },
+        "grupa": {
+            "id": 1,
+            "naziv": "Hečbek",
+            "boja": "#ff0000"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "ESP", "Radio", "Električni podizači", "Servo volan"
+        ],
+        "opis": "Pežo 207 je pravi predstavnik sportske grupe automobila. Nećete se pokajati ako ga uzmete.",
+        "cena": 4000,
+        "malaSlika": "pezo207-mala.jpg",
+        "velikaSlika": "pezo207-velika.jpg"
+    },
+    {
+        "id": 10,
+        "naziv": "Fiat Grande Punto",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 1,
+            "naziv": "Benzin"
+        },
+        "grupa": {
+            "id": 1,
+            "naziv": "Hečbek",
+            "boja": "#ff0000"
+        },
+        "brojSedista": 5,
+        "brojVrata": 3,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Radio", "Električni podizači", "Servo volan", "Multifunkc. volan", "Manuelna klima"
+        ],
+        "opis": "Najekonomičnija varijanta koju možemo da ponudimo. Sjajan odnos cene i kvaliteta, mala potrošnja.",
+        "cena": 2500,
+        "malaSlika": "punto-mala.jpg",
+        "velikaSlika": "punto-velika.jpg"
+    },
+    {
+        "id": 11,
+        "naziv": "Skoda Superb",
+        "menjac": {
+
+            "id": 2,
+            "naziv": "Automatski"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 2,
+            "naziv": "Limuzina",
+            "boja": "#59abe3"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Radio", "ISOFIX sistem", "Tempomat", "Multifunkc. volan", "Automatska klima",
+            "Navigacija", "Hands free", "4x4 pogon", "Start-stop sistem"
+        ],
+        "opis": "Skoda Superb je vrhunska limuzina visokog stepena udobnosti i nešto najbolje što nudi Škoda. Skoda Superb je idealan izbor za sve one koji žele da se voze u limuzini vrhunskog kvaliteta.",
+        "cena": 11500,
+        "malaSlika": "superb-mala.jpg",
+        "velikaSlika": "superb-velika.jpg"
+    },
+    {
+        "id": 12,
+        "naziv": "Opel Zafira",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 4,
+            "naziv": "Minivan",
+            "boja": "#ad0096"
+        },
+        "brojSedista": 7,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Radio", "ISOFIX sistem", "Tempomat", "Multifunkc. volan", "Automatska klima",
+            "Navigacija", "Hands free", "4x4 pogon", "Start-stop sistem"
+        ],
+        "opis": "Opel Zafira je najudobniji auto koji Opel može da ponudi. Fantastičan je kada je reč o dugim putovanjima i putovanjima sa poroicom.",
+        "cena": 7000,
+        "malaSlika": "zafira-mala.jpg",
+        "velikaSlika": "zafira-velika.jpg"
+    },
+    {
+        "id": 13,
+        "naziv": "Opel Korsa",
+        "menjac": {
+
+            "id": 1,
+            "naziv": "Manuelni"
+        },
+        "gorivo": {
+            "id": 1,
+            "naziv": "Benzin"
+        },
+        "grupa": {
+            "id": 1,
+            "naziv": "Hečbek",
+            "boja": "#ff0000"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 2,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Radio", "ISOFIX sistem", "Tempomat", "Multifunkc. volan", "Manuelna klima",
+            "Hands free"
+        ],
+        "opis": "Opel Korsa je pravi predstavnik sportske grupe automobila. Nećete se pokajati ako ga uzmete.",
+        "cena": 4500,
+        "malaSlika": "korsa-mala.jpg",
+        "velikaSlika": "korsa-velika.jpg"
+    },
+    {
+        "id": 14,
+        "naziv": "Audo Q7",
+        "menjac": {
+
+            "id": 2,
+            "naziv": "Automatski"
+        },
+        "gorivo": {
+            "id": 2,
+            "naziv": "Dizel"
+        },
+        "grupa": {
+            "id": 5,
+            "naziv": "Džip",
+            "boja": "#030002"
+        },
+        "brojSedista": 5,
+        "brojVrata": 5,
+        "brojKofera": 4,
+        "karakteristike": [
+            "ABS", "ESP", "ASR", "Radio", "ISOFIX sistem", "Tempomat", "Multifunkc. volan", "Automatska klima",
+            "Navigacija", "Hands free", "4x4 pogon", "Start-stop sistem", "360 kamera",
+            "Hard disk", "Privlačenje vrata pri zatvaranju"
+        ],
+        "opis": "Kvalitet, liksuz, moć, samo su neki od erpiteta kojima se može opisati ovaj predstavnik kompanije Audi. Sjajan za gradsku i vožnju na otvorenom, izrazit osećaj lagodnosti i mnoge druge stvari vezane za ovaj auto koje ćete osetiti ako ga rentirate.",
+        "cena": 18500,
+        "malaSlika": "audiq7-mala.jpg",
+        "velikaSlika": "audiq7-velika.jpg"
+    }
+]

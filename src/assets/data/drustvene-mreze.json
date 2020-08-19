@@ -1,0 +1,21 @@
+[{
+        "klasa": "fa fa-facebook",
+        "link": "https://sr-rs.facebook.com/"
+    },
+    {
+        "klasa": "fa fa-instagram",
+        "link": "https://www.instagram.com/?hl=sr"
+    },
+    {
+        "klasa": "fa fa-twitter",
+        "link": "https://twitter.com/login?lang=sr"
+    },
+    {
+        "klasa": "fa fa-linkedin",
+        "link": "https://www.linkedin.com/"
+    },
+    {
+        "klasa": "fa fa-google-plus",
+        "link": "https://accounts.google.com/"
+    }
+]

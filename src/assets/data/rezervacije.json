@@ -1,0 +1,151 @@
+[{
+        "id": 1,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-5",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "Mika",
+            "prezime": "Mikic",
+            "email": "mika@gmail.com"
+        },
+        "idAuto": 1
+    },
+    {
+        "id": 2,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-6",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 2
+    },
+    {
+        "id": 3,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-7",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 3
+    },
+    {
+        "id": 4,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-8",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 4
+    },
+    {
+        "id": 5,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-9",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 5
+    },
+    {
+        "id": 6,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-10",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 6
+    },
+    {
+        "id": 7,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-11",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 7
+    },
+    {
+        "id": 8,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-12",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 8
+    },
+    {
+        "id": 9,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-13",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 9
+    },
+    {
+        "id": 10,
+        "periodIzdavanja": {
+            "datumOd": "2020-08-4",
+            "vremeOd": "10:00",
+            "datumDo": "2020-08-14",
+            "vremeDo": "10:00"
+        },
+        "korisnik": {
+            "ime": "",
+            "prezime": "",
+            "email": ""
+        },
+        "idAuto": 10
+    }
+]

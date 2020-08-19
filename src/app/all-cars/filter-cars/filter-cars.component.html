@@ -1,0 +1,41 @@
+<aside class="aa-properties-sidebar">
+    <!-- Start Single properties sidebar -->
+    <div class="aa-properties-single-sidebar">
+        <h3>Filteri</h3>
+
+        <form action="" [formGroup]="filterForm" (ngSubmit)="onSubmit()">
+            <h4>Grupa</h4>
+
+            <div formArrayName="grupe" class="form-check" *ngFor="let g of grupaFormArray.controls; let i = index">
+                <input class="form-check-input" [formControlName]="i" type="checkbox" id="grupa{{ grupe[i].id }} ">
+                <label class="form-check-label" for="grupa{{ grupe[i].id }} ">
+                      {{ grupe[i].naziv }} 
+                </label>
+            </div>
+
+            <h4>Menjac</h4>
+
+            <div formArrayName="menjac" class="form-check" *ngFor="let m of menjacFormArray.controls; let x = index">
+                <input class="form-check-input" [formControlName]="x" type="checkbox" id="menjac{{ menjac[x].id }} ">
+                <label class="form-check-label" for="menjac{{ menjac[x].id }} ">
+                    {{ menjac[x].naziv }} 
+              </label>
+            </div>
+
+            <h4>Gorivo</h4>
+
+            <div formArrayName="gorivo" class="form-check" *ngFor="let g of gorivoFormArray.controls; let y = index">
+                <input class="form-check-input" [formControlName]="y" type="checkbox" id="gorivo{{ gorivo[y].id }} ">
+                <label class="form-check-label" for="gorivo{{ gorivo[y].id }} ">
+                    {{ gorivo[y].naziv }} 
+              </label>
+            </div>
+
+            <div class="aa-single-advance-search">
+                <input type="submit" value="Pretraga" class="aa-search-btn">
+            </div>
+
+        </form>
+    </div>
+
+</aside>

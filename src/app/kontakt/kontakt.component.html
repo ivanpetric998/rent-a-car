@@ -1,0 +1,48 @@
+<app-background-header></app-background-header>
+
+<section id="aa-contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-contact-area">
+                    <div class="aa-contact-top">
+                        <div class="aa-contact-top-left">
+
+                            <div class="aa-contact-form">
+                                <form class="contactform" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input [ngClass]="{'crveni-okvir': !contactForm.get('email').valid}" formControlName="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Unesite email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Svrha poruke</label>
+                                        <input [ngClass]="{'crveni-okvir': !contactForm.get('subject').valid}" formControlName="subject" type="text" class="form-control" aria-describedby="emailHelp" placeholder="Unesite svrhu poruke">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Poruka</label>
+                                        <textarea [ngClass]="{'crveni-okvir': !contactForm.get('message').valid}" formControlName="subject" placeholder="Unesite poruku" formControlName="message" cols="45" class="form-control" rows="8"></textarea>
+                                    </div>
+                                    <p *ngIf="poslato" class="pTagUspesnoPoslataPoruka">Ova poruka je poslata</p>
+
+                                    <input type="submit" name="submit" class="kontaktSend" value="Pošaljite poruku">
+
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="aa-contact-top-right">
+                            <h2>Kontakt</h2>
+                            <p>Ako imate bilo kakvih nedoumica ili pitanja, možete nas kontaktirati putem forme pored.</p>
+                            <ul class="contact-info-list">
+                                <li> <i class="fa fa-phone"></i> +381-11-1212-12</li>
+                                <li> <i class="fa fa-envelope-o"></i> rentacarivan&#64;gmail&#46;com</li>
+                                <li> <i class="fa fa-map-marker"></i> Glavna bb, Zemun</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

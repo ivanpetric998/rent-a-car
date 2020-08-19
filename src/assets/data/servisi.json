@@ -1,0 +1,21 @@
+[{
+        "fafa": "fa fa-car",
+        "naslov": "Dovozimo vozilo gde treba",
+        "tekst": "Nudimo mogućnost preuzimanja vozila na mestu na kom se dogovorimo. Vaše je samo da kažete lokaciju i mi ćemo vozilo da dovezemo tu"
+    },
+    {
+        "fafa": "fa fa-phone",
+        "naslov": "Brzo, sigurno i udobno",
+        "tekst": "Nazovite nas ili nas kontaktirajte putem formulara i rezervisite vozilo za najudobniju i najjeftiniju vožnju u trenutnoj ponudi rent a car kuća!"
+    },
+    {
+        "fafa": "fa fa-money",
+        "naslov": "Način plaćanja",
+        "tekst": "Nudimo mogućnost plaćanja što depozita, što cele rezervacije gotovinom, čekovima ili kreditnom karticom bilo koje banke."
+    },
+    {
+        "fafa": "fa fa-star",
+        "naslov": "U cenu je sve uključeno",
+        "tekst": "Ne dozvolite sebi neprijatna iznenađenja na šalteru u vidu dodatnih (skrivenih) troškova. Pozovite i uverite se u naš kvalitet."
+    }
+]

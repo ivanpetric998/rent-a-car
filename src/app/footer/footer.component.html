@@ -1,0 +1,31 @@
+<!-- Footer -->
+<footer id="aa-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-footer-area">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aa-footer-left">
+                                <p>Copyright &copy;
+                                    <a rel="nofollow" href="https://www.linkedin.com/in/ivan-petri%C4%87-23a1461a5/">Ivan Petrić</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="aa-footer-middle">
+                                <a *ngFor="let x of drustveneMreze" href="{{ x.link }}"><i class="{{ x.klasa }}"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="aa-footer-right">
+                                <a *ngFor="let i of meni" routerLink="{{i.ruta}}">{{i.naziv}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- / Footer -->

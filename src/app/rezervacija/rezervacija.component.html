@@ -1,0 +1,141 @@
+<app-background-header></app-background-header>
+
+<section id="aa-properties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+                <div class="auto">
+                    <h2>{{ auto.naziv | uppercase }}</h2>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <img src="assets/img/Automobili/{{ auto.velikaSlika }}" alt="{{ auto.naziv }}">
+                        </div>
+                    </div>
+
+
+                    <h3>{{ auto.grupa.naziv | uppercase}}</h3>
+                    <p>Cena : {{ auto.cena }}.00 Din. / dan</p>
+
+                    <h3>Osnovne karakteristike</h3>
+                    <div class="row karakteristike">
+                        <div class="col-md-4">
+                            <span>Broj sedista : {{ auto.brojSedista }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Broj vrata : {{ auto.brojVrata }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Broj kofera : {{ auto.brojKofera }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Gorivo : {{ auto.gorivo.naziv }}</span>
+                        </div>
+                        <div class="col-md-4">
+                            <span>Menjac : {{ auto.menjac.naziv }}</span>
+                        </div>
+                    </div>
+
+                    <h3>Ostale karakteristike</h3>
+                    <div class="row karakteristike">
+
+                        <div class="col-md-4" *ngFor="let i of auto.karakteristike">
+                            <span>{{ i }}</span>
+                        </div>
+
+                    </div>
+
+                    <h3>Opis</h3>
+                    <div class="row karakteristike">
+                        <p>{{ auto.opis }}</p>
+                    </div>
+
+                </div>
+
+                <form [formGroup]="rezervacijaForm" class="podaci-o-rezervaciji" (ngSubmit)="onSubmit()">
+
+                    <div class="row" formGroupName="vremenskiPeriod">
+                        <h2>Podaci o periodu izdavanja</h2>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Datum izadavanja</label>
+                                <input (change)="change()" [ngClass]="{'crveni-okvir': !rezervacijaForm.get('vremenskiPeriod.datumOd').valid && (submitovano || rezervacijaForm.get('vremenskiPeriod.datumOd').touched)}" formControlName="datumOd" class="form-control" type="date">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Vreme izdavanja</label>
+                                <input [ngClass]="{'crveni-okvir': !rezervacijaForm.get('vremenskiPeriod.vremeOd').valid && (submitovano || rezervacijaForm.get('vremenskiPeriod.vremeOd').touched)}" formControlName="vremeOd" class="form-control" type="time">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Datum vraćanja</label>
+                                <input (change)="change()" [ngClass]="{'crveni-okvir': (!rezervacijaForm.get('vremenskiPeriod.datumDo').valid && (submitovano || rezervacijaForm.get('vremenskiPeriod.datumDo').touched)) || (rezervacijaForm.get('vremenskiPeriod').errors?.datumDoNijeUDobromFormatu && rezervacijaForm.get('vremenskiPeriod').touched)}"
+                                    formControlName="datumDo" class="form-control" type="date">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Vreme vraćanja</label>
+                                <input [ngClass]="{'crveni-okvir': !rezervacijaForm.get('vremenskiPeriod.vremeDo').valid && (submitovano || rezervacijaForm.get('vremenskiPeriod.vremeDo').touched)}" formControlName="vremeDo" class="form-control" type="time">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" formGroupName="korisnik">
+                        <h2>Podaci o korisniku</h2>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Ime</label>
+                                <input [ngClass]="{'crveni-okvir': !rezervacijaForm.get('korisnik.ime').valid && (submitovano || rezervacijaForm.get('korisnik.ime').touched)}" formControlName="ime" class="form-control" type="text" placeholder="Unsesite ime">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Prezime</label>
+                                <input [ngClass]="{'crveni-okvir': !rezervacijaForm.get('korisnik.prezime').valid && (submitovano || rezervacijaForm.get('korisnik.prezime').touched)}" formControlName="prezime" class="form-control" type="text" placeholder="Unsesite prezime">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label>Email</label>
+                                <input [ngClass]="{'crveni-okvir': !rezervacijaForm.get('korisnik.email').valid && (submitovano || rezervacijaForm.get('korisnik.email').touched)}" formControlName="email" class="form-control" type="text" placeholder="Unsesite email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label>Broj vozačke dozvole</label>
+                                <input [ngClass]="{'crveni-okvir': !rezervacijaForm.get('korisnik.brojDozvole').valid && (submitovano || rezervacijaForm.get('korisnik.brojDozvole').touched)}" formControlName="brojDozvole" class="form-control" type="text" placeholder="Unesite broj dozvole">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Napomena</label>
+                                <textarea formControlName="napomena" class="form-control" rows="3" placeholder="Unesite napomenu (opciono)"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <table class="table">
+
+                            <tbody>
+                                <tr>
+                                    <td>Auto : {{ auto.naziv }}</td>
+                                    <td>Cena po danu : {{ auto.cena }}.00 RSD</td>
+                                    <td>Broj dana : {{ brojDana }}</td>
+                                    <td>Ukupna cena : {{ suma }}.00 RSD</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="row" [ngStyle]="{display: zauzetAuto?'block':'none'}">
+                        <p>Ovo vozilo nije moguće rezervisati u ovom vremenskom periodu, jer je zauzeto</p>
+                    </div>
+
+                    <input class="rezervisi" type="submit" value="Rezerviši">
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,34 @@
+<!-- Service section -->
+<section id="aa-service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-service-area">
+                    <div class="aa-title">
+                        <h2>Naše usluge</h2>
+                        <span></span>
+                    </div>
+                    <!-- service content -->
+                    <div class="aa-service-content">
+                        <div class="row">
+                            <div class="col-md-3" *ngFor="let i of servisi">
+                                <div class="aa-single-service">
+                                    <div class="aa-service-icon">
+                                        <span class="{{i.fafa}}"></span>
+                                    </div>
+                                    <div class="aa-single-service-content">
+                                        <h4>
+                                            <a href="#">{{i.naslov}}</a>
+                                        </h4>
+                                        <p>{{i.tekst}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Service section -->

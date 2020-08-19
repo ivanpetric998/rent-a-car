@@ -1,0 +1,13 @@
+<!-- start properties content head -->
+<div class="aa-properties-content-head">
+    <div class="aa-properties-content-head-left">
+        <form class="aa-sort-form" [formGroup]="sortForm">
+            <label for="sortiranje">Sortiraj po</label>
+            <select class="sortForma" id="sortiranje" formControlName="sort" (change)="onChange($event)">
+                <option value="0">Izaberite</option>
+                <option value="1">Po ceni rastuce</option>
+                <option value="2">Po ceni opadajuce</option>
+            </select>
+        </form>
+    </div>
+</div>
